@@ -93,7 +93,7 @@ def match_game_url(s):
     '573a76ed-b9ed-45b1-8e14-04bfacb90a21'
     >>> match_game_url('stuff')
     """
-    match = re.search(r'''si.bitcrafter.net/game/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})''', s)
+    match = re.search(r'''spirit-island-pbp\.vercel\.app/game/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})''', s)
     if match is not None:
         return match[1]
     return None
