@@ -1,8 +1,8 @@
 {
   "builds": [
     {
-      "src": "island/wsgi.py",
-      "use": "@devjin8/vercel-poetry@1.2.1"
+      "src": "*.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
