@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-$1nkg1t+jd(&$u1-!-hejbk)#)!x#m=%ly_i)pgwhg)h0qt!2k
 DEBUG = os.environ.get('DEBUG', '') == 'yes'
 
 ALLOWED_HOSTS = ['localhost', '.vercel.app']
-CSRF_TRUSTED_ORIGINS = ['https://spirit-island-pbp.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['*.vercel.app']
 
 
 # Application definition
