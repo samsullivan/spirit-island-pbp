@@ -1,14 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "island/wsgi.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/wsgi.py": {
+      "runtime": "@vercel/python@4.3.1"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "island/wsgi.py"
+      "dest": "api/wsgi.py"
     }
   ]
 }

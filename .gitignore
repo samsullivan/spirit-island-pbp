@@ -1,4 +1,6 @@
 __pycache__
+*.crt
+cockroach-data/
 db.sqlite3
 .env
 out.jpg

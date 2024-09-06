@@ -1,0 +1,11 @@
+services:
+ db:
+   image: cockroachdb/cockroach:latest-v23.2
+   ports:
+     - "26257:26257"
+     - "8080:8080"
+   command: start-single-node --insecure
+   volumes:
+     - "${PWD}/cockroach-data/crdb:/cockroach/cockroach-data"
+   environment:
+     - COCKROACH_DATABASE=pbf
