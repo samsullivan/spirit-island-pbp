@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "island/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "island/wsgi.py"
+    }
+  ]
+}
