@@ -6,7 +6,7 @@ from pbf import views
 from pbf.api import api
 
 urlpatterns = [
-    path('__debug__/', include('debug_toolbar.urls')),
+    #path('__debug__/', include('debug_toolbar.urls')),
     path('', include('django_prometheus.urls')),
     path('admin/', admin.site.urls),
     path("api/", api.urls),
